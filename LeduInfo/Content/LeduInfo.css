@@ -1,0 +1,26 @@
+﻿.navbar .navbar-fixed-top
+{
+	border-width: 5px;
+	position: fixed;
+	top: 10px;
+	background-color: #800000;
+	height: 50px;
+	width: 40px;
+	position: fixed;
+}  
+.navbar-inner
+{
+}
+.container
+{
+	
+}
+body
+{
+	border: medium solid #FF0000;
+	background-image: url('themes/DSC01494.gif');
+	height: 800px;
+	width:1240px;
+	position: fixed;
+	top: 30px;
+}
