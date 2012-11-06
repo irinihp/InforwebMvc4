@@ -1,26 +1,69 @@
-﻿.navbar .navbar-fixed-top
+﻿/*------- add css style for structure of Main page ------ */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* navigation
+----------------------------*/
+
+.navbar
 {
-	border-width: 5px;
-	position: fixed;
-	top: 10px;
-	background-color: #800000;
+	top: 20px;
+	border: 2px groove #CCCCFF;
+
 	height: 50px;
-	width: 40px;
-	position: fixed;
 }  
 .navbar-inner
 {
 }
+
+.navbar ,.navbar-inner,.container
+{
+	margin-left:25%;
+	margin-right:25%;
+}
+
+/* Left panel
+------------------------*/
+/* Right panel
+------------------------*/
+/* container
+------------------------*/
+/* reply
+------------------------*/
+
+
 .container
 {
-	
+	top: 70px;
+	border: 2px groove #C0C0C0;
+	position:relative;
+	height: 60%;
+	width:50%;
+	float:left;
 }
 body
 {
-	border: medium solid #FF0000;
 	background-image: url('themes/DSC01494.gif');
-	height: 800px;
-	width:1240px;
-	position: fixed;
-	top: 30px;
-}
+	
+}	
+
+/* footer
+------------------------------*/
+

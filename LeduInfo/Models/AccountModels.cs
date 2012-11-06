@@ -7,7 +7,7 @@ using System.Web.Security;
 
 namespace LeduInfo.Models
 {
-
+    
     public class ChangePasswordModel
     {
         [Required]
