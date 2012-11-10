@@ -28,12 +28,46 @@ h5, h6 {
 }
 .navbar
 {
-	top:1px;
+	top: 1px;
 	bottom: 5%;
 	border: 2px groove #CCCCFF;
 	height: 50px;
-	position:relative;
+	position: relative;
+	background-image: url('themes/banner.gif');
+	background-repeat: repeat-x;
 }  
+
+.navilist
+{
+	list-style: none;
+	font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+	display: inline-block;
+	text-decoration: none;
+	font-size: large;
+	font-weight: bold;
+	font-style: normal;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.navilist li
+{
+	float: left;
+	display: inline-block;
+	padding-right: 8px;
+}
+.navilist li a
+{
+	display: block;
+	padding-right: 8px;
+	text-decoration: none;
+}
+
+.navilist li a:hover
+{
+	background: #339966;
+}
+
+
 
 
 
@@ -96,3 +130,12 @@ html
 /* footer
 ------------------------------*/
 
+
+
+/* InfoPage
+------------------------------*/
+
+#infobackground
+{
+	background-image: url('themes/WebsiteHeader.gif');
+}

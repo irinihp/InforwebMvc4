@@ -34,5 +34,11 @@ namespace LeduInfo.Controllers
             ViewBag.Message = "Your Info system for renting.";
             return View();
         }
+
+        public ActionResult InfoPage()
+        {
+            ViewBag.Message = "This is the info page for user to search!";
+            return View();
+        }
     }
 }
