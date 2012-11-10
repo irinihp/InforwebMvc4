@@ -30,7 +30,6 @@ h5, h6 {
 {
 	top: 1px;
 	bottom: 5%;
-	border: 2px groove #CCCCFF;
 	height: 50px;
 	position: relative;
 	background-image: url('themes/banner.gif');
@@ -60,11 +59,12 @@ h5, h6 {
 	display: block;
 	padding-right: 8px;
 	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .navilist li a:hover
 {
-	background: #339966;
+	background: #45453F;
 }
 
 
@@ -76,18 +76,18 @@ h5, h6 {
 
 .leftpanel
 {
-	border: 1px groove #800080;
-	top:5px;
-	width:25%;
-	height:80%;
-	float:left;
-	
+	background-position: center center;
+	top: 5px;
+	width: 25%;
+	height: 80%;
+	float: left;
+	background-image: url('themes/contentbox.gif');
+	background-repeat: no-repeat;
 }
 /* Right panel
 ------------------------*/
 .rightpanel
 {
-	border: 1px groove #800080;
 	top:5px;
 	left:75%;
 	width:24.5%;
@@ -104,7 +104,6 @@ h5, h6 {
 .container
 {
 	top: 5%;
-	border: 1px groove #C0C0C0;
 	position:inherit;
 	height: 80%;
 	width: 50%;
@@ -112,7 +111,6 @@ h5, h6 {
 }
 .footer
 {
-	border: 1px groove #800080;
 	top: 85%;
 	clear: both;
 	height: 10%;
