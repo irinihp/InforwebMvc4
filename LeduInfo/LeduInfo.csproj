@@ -177,6 +177,7 @@
     <Content Include="Content\themes\contentbox.gif" />
     <Content Include="Content\themes\DSC01494.gif" />
     <Content Include="Content\themes\WebsiteHeader.gif" />
+    <Content Include="Content\ui.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.8.2-vsdoc.js" />
