@@ -15,7 +15,7 @@
 
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-
+<div class="container">
 @using (Html.BeginForm((string)ViewBag.FormAction, "Account")) {
     @Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.")
 
@@ -46,3 +46,5 @@
         <input type="submit" value="Register" />
     </fieldset>
 }
+
+</div>
