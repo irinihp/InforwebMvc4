@@ -1,0 +1,10 @@
+﻿.form-signin
+{
+    background-color: #EBE9ED;
+    padding: 15px;
+    border-top-style: 1;
+    border-right-style: 1;
+    border-bottom-style: 1;
+    border-left-style: 1;
+    width: 40%;
+}

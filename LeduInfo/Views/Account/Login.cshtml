@@ -11,6 +11,7 @@
 
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<link href="@Url.Content("../../Content/login-reg.css")" rel="stylesheet" type="text/css" />
 <div class="container">
 
      @using (Html.BeginForm((string)ViewBag.FormAction, "Account", FormMethod.Get, new { @class = "form-signin" }))
