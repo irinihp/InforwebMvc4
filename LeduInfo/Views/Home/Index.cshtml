@@ -11,29 +11,7 @@
     <title>Index</title>
 </head>
 <body>
-<div class="navbar">
-  <div class="navbar-inner">
-  <a class="brand" href="#">ITPC</a>
-    <ul class="nav">
-      
-        <li>@Html.ActionLink("R&D","index","Home")</li>
-        <li>@Html.ActionLink("R&D Solution","index","Home")</li>
-        <li>@Html.ActionLink("R&D AM","index","Home")</li>
-        <li>@Html.ActionLink("BIS","index","Home")</li>
-        <li>@Html.ActionLink("BIS AM", "index", "Home")</li>
-        <li>@Html.ActionLink("BIS Solution", "index", "Home")</li>
-        @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "navbar-form pull-left" }))
-        {
-        
-            <input type="text" class="span5" />
-            <button type="submit" class="btn btn-primary">
-                Search your info</button>
-        }
-        <li>@Html.ActionLink("login", "Login", "Account")</li>
-        <li>@Html.ActionLink("Regesiter", "Login", "Account")</li>
-    </ul>
-  </div>
-    </div>
+
                
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
