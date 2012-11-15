@@ -22,11 +22,6 @@ namespace LeduInfo.Controllers
             return View();
         }
         
-        public ActionResult FindTest()
-        {
-            ViewBag.Test=" This is a final test";
-            return View();
-        }
         public ActionResult Contact()
         {
             ViewBag.Message = "Your quintessential contact page.";

@@ -22,10 +22,6 @@ namespace LeduInfo.Controllers
             return ContextDependentView();
         }
 
-        public ActionResult NewAction()
-        {
-            return View();
-        }
 
         //
         // POST: /Account/JsonLogin

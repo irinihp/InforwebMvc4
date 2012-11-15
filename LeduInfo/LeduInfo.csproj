@@ -153,6 +153,10 @@
     <Content Include="Global.asax" />
     <Content Include="Images\glyphicons-halflings-white.png" />
     <Content Include="Images\glyphicons-halflings.png" />
+    <Content Include="Images\sign_1.gif" />
+    <Content Include="Images\sign_2.gif" />
+    <Content Include="Images\sign_3.gif" />
+    <Content Include="Images\sign_4.gif" />
     <Content Include="Images\slide-01.jpg" />
     <Content Include="Images\slide-02.jpg" />
     <Content Include="Images\slide-03.jpg" />

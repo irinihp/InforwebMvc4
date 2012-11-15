@@ -6,6 +6,7 @@ Thumbs.db
 *.aps
 *.pch
 *.vspscc
+*.dll
 *_i.c
 *_p.c
 *.ncb
@@ -21,6 +22,7 @@ Thumbs.db
 [Bb]in
 [Dd]ebug*/
 *.lib
+*.suo
 *.sbr
 obj/
 [Rr]elease*/
