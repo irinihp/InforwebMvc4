@@ -15,10 +15,7 @@ namespace LeduInfo.Models
         public string Content { get; set; }
     }
 
-    public class MyClass
-    {
-        
-    }
+   
 
     public class BlogContext : DbContext
     {
@@ -29,4 +26,6 @@ namespace LeduInfo.Models
         }
         public DbSet<bloggingModel> Blogtbl { get; set; }
     }
+
+    
 }

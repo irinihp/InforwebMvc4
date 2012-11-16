@@ -59,9 +59,10 @@
     .carousel .item {
       height: 500px;
     }
-    .carousel img {
-      min-width: 100%;
-      height: 500px;
+    .carousel img
+    {
+     min-width: 80%;
+     height:500px;
     }
 
     .carousel-caption {
