@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar navbar-inverse">
   <div class="navbar-inner">
-  <a class="brand" href="#">ITPC</a>
+    @Html.ActionLink("Ledu", "Index", "Home", new { @class = "brand" })
     <ul class="nav">
       
         <li>@Html.ActionLink("R&D","index","Home")</li>
@@ -18,7 +18,7 @@
         <li>@Html.ActionLink("BIS Solution", "index", "Home")</li>
         @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "navbar-form pull-left" }))
         {
-        
+            
             <input type="text" class="span5" />
             <button type="submit" class="btn btn-primary">
                 Search your info</button>
@@ -32,18 +32,15 @@
                 <div class="float-left">
                 </div>
                 <div class="float-right">
-                    <section id="login">
                         @Html.Partial("_LoginPartial")
-                    </section>
                   
                 </div>
             </div>
         
         <div id="body">
             @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
+            
+                 @RenderBody()
         </div>
       
     </body>
