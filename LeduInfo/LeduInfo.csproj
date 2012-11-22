@@ -141,6 +141,9 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\bloggingModel.cs" />
+    <Compile Include="Models\House.cs" />
+    <Compile Include="Models\leduInfoDB.cs" />
+    <Compile Include="Models\Renter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
