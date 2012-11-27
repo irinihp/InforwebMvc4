@@ -20,7 +20,8 @@ namespace LeduInfo.Models
             public int houseStyleID { get; set; }
         }
         public class OwnerInfo
-        {
+        {   
+            [Key]
             public int ownerID { get; set; }
             public string ownerName { get; set; }
             public long phoneName { get; set; }
@@ -28,6 +29,7 @@ namespace LeduInfo.Models
 
         public class RenterInfo
         {
+            [Key]
             public int renterID { get; set; }
             public string renterName { get; set; }
             public long renterPhoneNumber { get; set; }
@@ -35,7 +37,7 @@ namespace LeduInfo.Models
 
         public class HouseStyle
         {
-
+            [Key]
             public int houseStyleID { get; set; }
             public string houseStyle { get; set; }
         }

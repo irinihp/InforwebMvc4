@@ -6,6 +6,10 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using LeduInfo.Models;
+using System.Text;
+using LeduInfo.Models;
 
 namespace LeduInfo
 {
@@ -29,21 +33,23 @@ namespace LeduInfo
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
+            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
+      
+
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            Database.SetInitializer<leduInfoDB>(new LeduInfo.Models.DAL.LeduInfoDBInitializer());
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
-
             BundleTable.Bundles.RegisterTemplateBundles();
         }
     }

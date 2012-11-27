@@ -7,5 +7,6 @@ namespace LeduInfo.Models
 {
     public class Renter
     {
+
     }
 }
