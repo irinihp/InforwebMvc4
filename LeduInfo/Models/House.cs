@@ -3,12 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
-
 namespace LeduInfo.Models
 {
-    public class House
-    {
-
+    
         public class HouseInfo
         {
             [Key]
@@ -24,7 +21,7 @@ namespace LeduInfo.Models
             [Key]
             public int ownerID { get; set; }
             public string ownerName { get; set; }
-            public long phoneName { get; set; }
+            public long phoneNumber { get; set; }
         }
 
         public class RenterInfo
@@ -41,5 +38,18 @@ namespace LeduInfo.Models
             public int houseStyleID { get; set; }
             public string houseStyle { get; set; }
         }
-    }
+
+       public class ImgResource
+        {
+           [Key]
+           public int imgID { get; set; }
+           public string imgPath { get; set; }
+           public int spanNum { get; set; }
+           public string AltMsg { get; set; }
+           public string Description { get; set; }
+           public string smallDes { get; set; }
+           public string warpwordsTitle { get; set; }
+           public string warpContent { get; set; }
+        }
+    
 }

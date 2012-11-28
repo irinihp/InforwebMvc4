@@ -9,7 +9,6 @@ using System.Web.Routing;
 using System.Data.Entity;
 using LeduInfo.Models;
 using System.Text;
-using LeduInfo.Models;
 
 namespace LeduInfo
 {
@@ -47,7 +46,6 @@ namespace LeduInfo
         {
             AreaRegistration.RegisterAllAreas();
             Database.SetInitializer<leduInfoDB>(new LeduInfo.Models.DAL.LeduInfoDBInitializer());
-
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             BundleTable.Bundles.RegisterTemplateBundles();

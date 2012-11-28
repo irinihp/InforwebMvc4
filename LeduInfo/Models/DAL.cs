@@ -9,22 +9,21 @@ namespace LeduInfo.Models
     public class DAL
     {
 
-        public class LeduInfoDBInitializer:CreateDatabaseIfNotExists<leduInfoDB>
+        public class LeduInfoDBInitializer : CreateDatabaseIfNotExists<leduInfoDB>
         {
-
-            protected override void Seed(leduInfoDB context)
-            {
-                base.Seed(context);
-            }
-            public static void CreateDB()
+            public LeduInfoDBInitializer()
             {
                 using (var db = new leduInfoDB())
                 {
-                    db.OwnerInfotbl.Add(new House.OwnerInfo { ownerName = "Robin", phoneName = 15210457610 });
+
+                    db.OwnerInfotbl.Add(new OwnerInfo { ownerName = "Robin", phoneNumber = 15210457610 });
                     db.SaveChanges();
                 }
+
             }
-         
+
+
+
         }
     }
 }

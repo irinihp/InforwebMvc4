@@ -9,13 +9,14 @@ namespace LeduInfo.Models
     public class leduInfoDB:DbContext
     {
         public leduInfoDB()
-            : base("LeduInfoDB")
+            : base("leduInfo")
         {
 
         }
-        public DbSet<House.HouseInfo> HouseInfotbl { get; set; }
-        public DbSet<House.HouseStyle> HouseStyletbl { get; set; }
-        public DbSet<House.OwnerInfo> OwnerInfotbl { get; set; }
-        public DbSet<House.RenterInfo> RenterInfotbl { get; set; }
+        public DbSet<HouseInfo> HouseInfotbl { get; set; }
+        public DbSet<HouseStyle> HouseStyletbl { get; set; }
+        public DbSet<OwnerInfo> OwnerInfotbl { get; set; }
+        public DbSet<RenterInfo> RenterInfotbl { get; set; }
+        public DbSet<ImgResource> ImgResources { get; set; }
     }
 }
