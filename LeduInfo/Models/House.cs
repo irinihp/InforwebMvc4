@@ -51,6 +51,10 @@ namespace LeduInfo.Models
            public string smallDes { get; set; }
            public string warpwordsTitle { get; set; }
            public string warpContent { get; set; }
+           public int houseID { get; set; }
+           public int houseStyleID { get; set; }
+           public virtual HouseInfo HouseInfo { get; set; }
+           public virtual List<HouseStyle> HouseStyle { get; set; }
         }
     
 }

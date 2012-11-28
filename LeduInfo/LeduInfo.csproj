@@ -152,10 +152,13 @@
     <Compile Include="Migrations\201211280806265_imgResourceAdding.Designer.cs">
       <DependentUpon>201211280806265_imgResourceAdding.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201211281518372_addrelation.cs" />
+    <Compile Include="Migrations\201211281518372_addrelation.Designer.cs">
+      <DependentUpon>201211281518372_addrelation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\bloggingModel.cs" />
-    <Compile Include="Models\HouseModel.cs" />
     <Compile Include="Models\DAL.cs" />
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\HTMLRender.cs" />
@@ -276,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201211280806265_imgResourceAdding.resx">
       <DependentUpon>201211280806265_imgResourceAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211281518372_addrelation.resx">
+      <DependentUpon>201211281518372_addrelation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
