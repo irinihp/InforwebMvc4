@@ -16,16 +16,15 @@ namespace LeduInfo.Models
     }
 
    
-
     public class BlogContext : DbContext
     {
         public BlogContext()
        
             : base("DefaultConnection")
         {
+           
         }
         public DbSet<bloggingModel> Blogtbl { get; set; }
     }
 
-    
 }
