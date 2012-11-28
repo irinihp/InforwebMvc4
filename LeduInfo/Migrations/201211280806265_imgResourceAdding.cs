@@ -21,12 +21,14 @@ namespace LeduInfo.Migrations
                         warpContent = c.String(),
                     })
                 .PrimaryKey(t => t.imgID);
+            AddColumn("dbo.OwnerInfoes", "phoneNumber", c => c.Long(nullable: false));
             
         }
         
         public override void Down()
         {
             DropTable("dbo.ImgResources");
+
         }
     }
 }

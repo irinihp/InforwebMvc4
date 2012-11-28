@@ -7,13 +7,11 @@ namespace LeduInfo.Migrations
     {
         public override void Up()
         {
-            AddColumn("dbo.OwnerInfoes", "phoneNum", c => c.Long(nullable: false));
             
         }
         
         public override void Down()
         {
-            AddColumn("dbo.OwnerInfoes", "phoneNumber", c => c.Long(nullable: false));
             
         }
     }

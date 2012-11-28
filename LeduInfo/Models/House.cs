@@ -22,6 +22,7 @@ namespace LeduInfo.Models
             public int ownerID { get; set; }
             public string ownerName { get; set; }
             public long phoneNumber { get; set; }
+            public int DistrictID { get; set; }
         }
 
         public class RenterInfo

@@ -8,13 +8,12 @@ namespace LeduInfo.Migrations
         public override void Up()
         {
             AddColumn("dbo.OwnerInfoes", "phoneNum", c => c.Long(nullable: false));
-            DropColumn("dbo.OwnerInfoes", "phoneNumber");
         }
         
         public override void Down()
         {
             AddColumn("dbo.OwnerInfoes", "phoneNum", c => c.Long(nullable: false));
-            DropColumn("dbo.OwnerInfoes", "phoneNumber");
+            DropColumn("dbo.OwnerInfoes", "phoneNum");
         }
     }
 }
