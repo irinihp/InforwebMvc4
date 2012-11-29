@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.Design;
 namespace LeduInfo.Models
 {
     
@@ -54,7 +56,7 @@ namespace LeduInfo.Models
            public int houseID { get; set; }
            public int houseStyleID { get; set; }
            public virtual HouseInfo HouseInfo { get; set; }
-           public virtual List<HouseStyle> HouseStyle { get; set; }
+           public virtual List<HouseStyle> HouseStyle { get; set;}
         }
     
 }

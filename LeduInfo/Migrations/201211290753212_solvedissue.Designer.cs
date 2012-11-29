@@ -5,18 +5,18 @@ namespace LeduInfo.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class addimg : IMigrationMetadata
+    public sealed partial class solvedissue : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addimg));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(solvedissue));
         
         string IMigrationMetadata.Id
         {
-            get { return "201211280759097_addimg"; }
+            get { return "201211290753212_solvedissue"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return null; }
+            get { return Resources.GetString("Source"); }
         }
         
         string IMigrationMetadata.Target
