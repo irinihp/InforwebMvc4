@@ -6,7 +6,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LeduInfo.Models;
-
 namespace LeduInfo.Controllers
 {
     public class HouseController : Controller
@@ -18,7 +17,8 @@ namespace LeduInfo.Controllers
 
         public ActionResult Index()
         {
-            return View(db.OwnerInfotbl.ToList());
+            ViewBag.District = db.Districts.ToList();
+            return View(db.ImgResources.ToList());
         }
 
         //

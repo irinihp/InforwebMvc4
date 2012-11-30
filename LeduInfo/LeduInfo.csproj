@@ -141,9 +141,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201211300240228_AddTable.cs" />
-    <Compile Include="Migrations\201211300240228_AddTable.Designer.cs">
-      <DependentUpon>201211300240228_AddTable.cs</DependentUpon>
+    <Compile Include="Migrations\201211300844181_Districtsadding.cs" />
+    <Compile Include="Migrations\201211300844181_Districtsadding.Designer.cs">
+      <DependentUpon>201211300844181_Districtsadding.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -153,6 +153,7 @@
     <Compile Include="Models\HTMLRender.cs" />
     <Compile Include="Models\leduInfoDB.cs" />
     <Compile Include="Models\Renter.cs" />
+    <Compile Include="Models\Resourceupdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +161,7 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\imgResource.css" />
     <Content Include="Content\login-reg.css" />
     <Content Include="Content\mainPage.css" />
     <Content Include="favicon.ico" />
@@ -263,8 +265,8 @@
     <Content Include="AppSetting.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201211300240228_AddTable.resx">
-      <DependentUpon>201211300240228_AddTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201211300844181_Districtsadding.resx">
+      <DependentUpon>201211300844181_Districtsadding.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

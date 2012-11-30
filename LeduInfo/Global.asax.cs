@@ -45,10 +45,11 @@ namespace LeduInfo
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            Database.SetInitializer<leduInfoDB>(new LeduInfo.Models.DAL.LeduInfoDBInitializer());
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
             BundleTable.Bundles.RegisterTemplateBundles();
+            Database.SetInitializer<leduInfoDB>(new LeduInfo.Models.DAL.LeduInfoDBInitializer());
+
         }
     }
 }

@@ -16,6 +16,7 @@ namespace LeduInfo.Models
             public int ownerID { get; set; }
             public int renterID { get; set; }
             public bool rented { get; set; }
+            public virtual HouseStyle HouseStyle { get; set; }
             public int houseStyleID { get; set; }
         }
         public class OwnerInfo
@@ -23,6 +24,7 @@ namespace LeduInfo.Models
             [Key]
             public int ownerID { get; set; }
             public string ownerName { get; set; }
+            
             public long phoneNumber { get; set; }
             public int DistrictID { get; set; }
         }
@@ -58,5 +60,12 @@ namespace LeduInfo.Models
            public virtual HouseInfo HouseInfo { get; set; }
            public virtual HouseStyle HouseStyle { get; set;}
         }
+
+       public class District
+       {
+           [Key]
+           public int DistrictID { get; set; }
+           public string DistructName { get; set; }
+       }
     
 }

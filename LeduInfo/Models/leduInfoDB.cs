@@ -18,5 +18,6 @@ namespace LeduInfo.Models
         public DbSet<OwnerInfo> OwnerInfotbl { get; set; }
         public DbSet<RenterInfo> RenterInfotbl { get; set; }
         public DbSet<ImgResource> ImgResources { get; set; }
+        public DbSet<District> Districts { get; set; }
     }
 }

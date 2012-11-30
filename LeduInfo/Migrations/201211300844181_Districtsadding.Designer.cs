@@ -5,18 +5,18 @@ namespace LeduInfo.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class AddTable : IMigrationMetadata
+    public sealed partial class Districtsadding : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Districtsadding));
         
         string IMigrationMetadata.Id
         {
-            get { return "201211300240228_AddTable"; }
+            get { return "201211300844181_Districtsadding"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target
