@@ -141,9 +141,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201211290753212_solvedissue.cs" />
-    <Compile Include="Migrations\201211290753212_solvedissue.Designer.cs">
-      <DependentUpon>201211290753212_solvedissue.cs</DependentUpon>
+    <Compile Include="Migrations\201211300240228_AddTable.cs" />
+    <Compile Include="Migrations\201211300240228_AddTable.Designer.cs">
+      <DependentUpon>201211300240228_AddTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -263,8 +263,8 @@
     <Content Include="AppSetting.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201211290753212_solvedissue.resx">
-      <DependentUpon>201211290753212_solvedissue.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201211300240228_AddTable.resx">
+      <DependentUpon>201211300240228_AddTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

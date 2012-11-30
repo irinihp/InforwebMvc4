@@ -5,13 +5,13 @@ namespace LeduInfo.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class solvedissue : IMigrationMetadata
+    public sealed partial class AddTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(solvedissue));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201211290753212_solvedissue"; }
+            get { return "201211300240228_AddTable"; }
         }
         
         string IMigrationMetadata.Source

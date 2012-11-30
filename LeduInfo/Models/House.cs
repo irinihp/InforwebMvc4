@@ -56,7 +56,7 @@ namespace LeduInfo.Models
            public int houseID { get; set; }
            public int houseStyleID { get; set; }
            public virtual HouseInfo HouseInfo { get; set; }
-           public virtual List<HouseStyle> HouseStyle { get; set;}
+           public virtual HouseStyle HouseStyle { get; set;}
         }
     
 }
