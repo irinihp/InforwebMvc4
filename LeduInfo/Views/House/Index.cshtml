@@ -5,9 +5,11 @@
 }
 <link href="@Url.Content("../../Content/imgResource.css")" rel="stylesheet" type="text/css" />
    <div class="page-header">
-  <h1>House Resource<small> @ViewBag.District[0]</small></h1>
+  <h1>House Resource<small> @ViewBag.District</small></h1>
 </div>
-
+<div class="alert alert-info">
+  <strong>Headup!</strong>please select your favorate house!
+</div>
  @foreach (var item in Model)
  {
   
@@ -15,6 +17,7 @@
   <li class="@Html.DisplayFor(modelitem=>item.spanNum)">
     <div class="thumbnail">
       <img src="@Html.DisplayFor(modelitem=>item.imgPath)" alt="@Html.DisplayFor(modelitem=>item.AltMsg)"/>
+
       <blockquote>
   <p>@Html.DisplayFor(modelitem=>item.Description )</p>
   <small>@Html.DisplayFor(modelitem=>item.smallDes) <cite title="Source Title">@Html.DisplayFor(modelitem=>item.warpwordsTitle)</cite></small>

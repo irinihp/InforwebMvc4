@@ -21,6 +21,18 @@ namespace LeduInfo.Controllers
             return View(db.ImgResources.ToList());
         }
 
+        //GET: /House/Index/id
+        [HttpPost]
+        public ActionResult Index(int id=0)
+        {
+            HouseInfo houseinfo = db.HouseInfotbl.Find(id);
+            if (houseinfo ==null )
+            {
+                return HttpNotFound();
+            }
+            return View(houseinfo);
+        }
+
         //
         // GET: /House/Details/5
 

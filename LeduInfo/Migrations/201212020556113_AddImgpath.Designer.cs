@@ -5,13 +5,13 @@ namespace LeduInfo.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class Districtsadding : IMigrationMetadata
+    public sealed partial class AddImgpath : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Districtsadding));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddImgpath));
         
         string IMigrationMetadata.Id
         {
-            get { return "201211300844181_Districtsadding"; }
+            get { return "201212020556113_AddImgpath"; }
         }
         
         string IMigrationMetadata.Source

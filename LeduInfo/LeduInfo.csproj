@@ -141,9 +141,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201211300844181_Districtsadding.cs" />
-    <Compile Include="Migrations\201211300844181_Districtsadding.Designer.cs">
-      <DependentUpon>201211300844181_Districtsadding.cs</DependentUpon>
+    <Compile Include="Migrations\201211301350087_changetable.cs" />
+    <Compile Include="Migrations\201211301350087_changetable.Designer.cs">
+      <DependentUpon>201211301350087_changetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211301454084_change.cs" />
+    <Compile Include="Migrations\201211301454084_change.Designer.cs">
+      <DependentUpon>201211301454084_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201212010649206_cmdlet.cs" />
+    <Compile Include="Migrations\201212010649206_cmdlet.Designer.cs">
+      <DependentUpon>201212010649206_cmdlet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201212020556113_AddImgpath.cs" />
+    <Compile Include="Migrations\201212020556113_AddImgpath.Designer.cs">
+      <DependentUpon>201212020556113_AddImgpath.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -152,6 +164,7 @@
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\HTMLRender.cs" />
     <Compile Include="Models\leduInfoDB.cs" />
+    <Compile Include="Models\picpicker.cs" />
     <Compile Include="Models\Renter.cs" />
     <Compile Include="Models\Resourceupdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -265,8 +278,17 @@
     <Content Include="AppSetting.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201211300844181_Districtsadding.resx">
-      <DependentUpon>201211300844181_Districtsadding.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201211301350087_changetable.resx">
+      <DependentUpon>201211301350087_changetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211301454084_change.resx">
+      <DependentUpon>201211301454084_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201212010649206_cmdlet.resx">
+      <DependentUpon>201212010649206_cmdlet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201212020556113_AddImgpath.resx">
+      <DependentUpon>201212020556113_AddImgpath.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

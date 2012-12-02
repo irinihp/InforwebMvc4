@@ -3,7 +3,7 @@ namespace LeduInfo.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Districtsadding : DbMigration
+    public partial class changetable : DbMigration
     {
         public override void Up()
         {
@@ -16,10 +16,14 @@ namespace LeduInfo.Migrations
                     })
                 .PrimaryKey(t => t.DistrictID);
             
+            AddForeignKey("dbo.HouseInfoes", "houseStyleID", "dbo.HouseStyles", "houseStyleID", cascadeDelete: true);
+            CreateIndex("dbo.HouseInfoes", "houseStyleID");
         }
         
         public override void Down()
         {
+            DropIndex("dbo.HouseInfoes", new[] { "houseStyleID" });
+            DropForeignKey("dbo.HouseInfoes", "houseStyleID", "dbo.HouseStyles");
             DropTable("dbo.Districts");
         }
     }

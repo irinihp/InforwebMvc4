@@ -67,5 +67,12 @@ namespace LeduInfo.Models
            public int DistrictID { get; set; }
            public string DistructName { get; set; }
        }
+
+       public class ImgPath
+       {
+           [Key]
+           public int pathID { get; set; }
+           public string Path { get; set; }
+       }
     
 }

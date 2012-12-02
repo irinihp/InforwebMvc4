@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 ﻿
-=======
+
 ﻿  .navbar-wrapper {
       position: relative;
       z-index: 10;
@@ -18,13 +17,12 @@
     /* Downsize the brand/project name a bit */
     .navbar .brand {
       padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
     }
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
-      padding: 15px 20px;
     }
 
     /* Offset the responsive button for proper vertical alignment */
@@ -61,17 +59,11 @@
     }
     .carousel img
     {
-     min-width: 80%;
-     height:500px;
+     min-width: 100%;
+     height:100%;
     }
 
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-bottom: 100px;
-    }
+    
     .carousel-caption h1,
     .carousel-caption .lead {
       margin: 0;
@@ -212,4 +204,3 @@
       }
 
     }
->>>>>>> 61c655374a6a0962e7b3294f48d97191f8f84eb1

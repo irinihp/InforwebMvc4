@@ -7,7 +7,7 @@
     <body>
         <div class="navbar navbar-inverse">
   <div class="navbar-inner">
-    @Html.ActionLink("Ledu", "Index", "Home", new { @class = "brand" })
+    @Html.ActionLink("LeduInfo", "Index", "Home", new { @class = "brand" })
     <ul class="nav">
       
         <li>@Html.ActionLink("R&D","index","Home")</li>
@@ -15,7 +15,7 @@
         <li>@Html.ActionLink("R&D AM","index","Home")</li>
         <li>@Html.ActionLink("BIS","index","Home")</li>
         <li>@Html.ActionLink("BIS AM", "index", "Home")</li>
-        <li>@Html.ActionLink("BIS Solution", "index", "Home")</li>
+        <li>@Html.ActionLink("HouseResource", "index", "House")</li>
         @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "navbar-form pull-left" }))
         {
             

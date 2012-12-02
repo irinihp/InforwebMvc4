@@ -15,7 +15,7 @@ namespace LeduInfo.Models
             {
                 using (var db = new leduInfoDB())
                 {
-                    db.OwnerInfotbl.Add(new OwnerInfo { ownerName = "Robin", DistrictID=1,phoneNumber =15210457610});
+                    db.OwnerInfotbl.Add(new OwnerInfo { ownerName = "Robin", DistrictID=2,phoneNumber =15210457610});
                     db.SaveChanges();
                 }
 

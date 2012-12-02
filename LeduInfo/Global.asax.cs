@@ -49,6 +49,7 @@ namespace LeduInfo
             RegisterRoutes(RouteTable.Routes);
             BundleTable.Bundles.RegisterTemplateBundles();
             Database.SetInitializer<leduInfoDB>(new LeduInfo.Models.DAL.LeduInfoDBInitializer());
+            picpicker.imgPicker();
 
         }
     }
