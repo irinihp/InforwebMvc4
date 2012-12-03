@@ -17,12 +17,12 @@ namespace LeduInfo.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.District = db.Districts.ToList();
+            ViewBag.District = db.Districts.DefaultIfEmpty();
             return View(db.ImgResources.ToList());
         }
 
         //GET: /House/Index/id
-        [HttpPost]
+        [HttpGet]
         public ActionResult Index(int id=0)
         {
             HouseInfo houseinfo = db.HouseInfotbl.Find(id);
@@ -30,7 +30,8 @@ namespace LeduInfo.Controllers
             {
                 return HttpNotFound();
             }
-            return View(houseinfo);
+            
+            return View("DetailsOfHouse", houseinfo);
         }
 
         //

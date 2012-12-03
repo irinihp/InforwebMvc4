@@ -14,20 +14,22 @@ namespace LeduInfo.Models
         {
             var db = new leduInfoDB();
             
-            var rootpath = ConfigurationManager.AppSettings["DocBasePath"];
+            
+            var rootpath = ConfigurationManager.AppSettings["ImgBasePath"];
             if (Directory.Exists(rootpath))
             {
-                
                 foreach (var item in Directory.GetFiles(rootpath))
                 {
-                   var filepath = from p in db.ImgPaths
-                                  where item==p.Path
+                   var foo=@item;
+                   var filepathInDB = from p in db.ImgPaths
+                                  where p.Path==foo
                                   select p;
-
-                   if (filepath!=null)
+                   
+                   if (filepathInDB.Any())
                    {
                        continue;
                    }
+
                     db.ImgPaths.Add(new ImgPath { Path = item});
                     
                 }
