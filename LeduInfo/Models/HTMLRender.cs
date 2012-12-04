@@ -24,5 +24,10 @@ namespace LeduInfo.Models
             HTML.AppendLine("</ul>");
             return HTML.ToString();
         }
+
+        public static string RendImageList()
+        {
+
+        }
     }
 }

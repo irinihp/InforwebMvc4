@@ -18,11 +18,14 @@
         <li>@Html.ActionLink("HouseResource", "index", "House")</li>
         @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "navbar-form pull-left" }))
         {
+            <div class="icon-search"></div>
+            <input type="text" class="span5" placeholder="Search"/>
+           
             
-            <input type="text" class="span5" />
             <button type="submit" class="btn btn-primary">
                 Search your info</button>
         }
+        
         <li>@Html.ActionLink("login", "Login", "Account")</li>
         <li>@Html.ActionLink("Register", "Register", "Account")</li>
     </ul>

@@ -37,5 +37,18 @@ namespace LeduInfo.Models
             }
 
         }
+        public static List<string> imgPickers()
+        {
+            List<string> paths = new List<string>();
+            var rootpath = ConfigurationManager.AppSettings["ImgBasePath"];
+            if (Directory.Exists(rootpath))
+            {
+                foreach (var item in Directory.GetFiles(rootpath))
+                {
+                    paths.Add(item);
+                }
+            }
+            return paths;
+        }
     }
 }
