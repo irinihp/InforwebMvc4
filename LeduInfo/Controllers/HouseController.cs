@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LeduInfo.Models;
+using System.IO;
+
 namespace LeduInfo.Controllers
 {
     public class HouseController : Controller
@@ -17,8 +19,7 @@ namespace LeduInfo.Controllers
 
         public ActionResult Index()
         {
-            ViewBag.District = db.Districts.DefaultIfEmpty();
-            return View(db.ImgResources.ToList());
+            return View(db.ImgPaths.ToList());
         }
 
         public ActionResult HouseDetails(int id = 0)
@@ -44,6 +45,22 @@ namespace LeduInfo.Controllers
             return View(houseinfo);
         }
 
+        public ActionResult HouseList()
+        {
+            return View(db.HouseInfotbl.ToList());
+        }
+        public ActionResult GetImageList(int id=0)
+        {
+            //string mp=@"C:\LeduHouse\ResouseImg\1.jpg";
+            ImgPath imgpath = db.ImgPaths.Find(id);
+            string mp = @imgpath.Path.ToString();
+            //string mp = "@" + from u in db.ImgPaths
+            //                  where u.pathID == id
+            //                  select u;
+            return File(mp, "img");
+        }
+
+        
         //
         // GET: /House/Create
 

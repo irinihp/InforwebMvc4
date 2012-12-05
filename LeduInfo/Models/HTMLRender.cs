@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Text;
+using LeduInfo.Models;
 
 namespace LeduInfo.Models
 {
@@ -27,7 +28,11 @@ namespace LeduInfo.Models
 
         public static string RendImageList()
         {
-
+            StringBuilder ImageHTML = new StringBuilder();
+            
+            ImageHTML.AppendLine("<li><img class=\"item\" src=\"../../Images/fashion.png\" width=\"70\" alt=\"\"></li>");
+            return ImageHTML.ToString();
+            
         }
     }
 }

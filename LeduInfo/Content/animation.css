@@ -66,6 +66,7 @@ a:hover {
          -o-transition: .2s ease-in-out;
             transition: .2s ease-in-out;
   }
+ 
   
     .clicked {
       -webkit-transform: rotate(45deg);
@@ -105,6 +106,27 @@ a:hover {
                   transform: scale(1.02);
         }
   
+   #rightarrow
+{
+    margin-top: 1em;
+    cursor: pointer;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    position: static;
+    left: -10px;
+}
+   #rightarrow:hover
+  {
+      box-shadow: 0 0 10px #aaa;
+          -webkit-transform: scale(1.02);
+             -moz-transform: scale(1.02);
+              -ms-transform: scale(1.02);
+               -o-transform: scale(1.02);
+                  transform: scale(1.02);
+  }
 		
 @-webkit-keyframes show{
   0% { 
