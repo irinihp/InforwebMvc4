@@ -27,11 +27,9 @@
   <ul class="item-list"> 
        @foreach (var item in Model)
        {
-         <li><img class="item" src="/House/GetImageList/@item.pathID" onclick="Doaction()" width="70" alt=""></li> 
+         <li><img class="item" id="@item.pathID" src="/House/GetImageList/@item.pathID" width="70" alt=""></li> 
            
        }
-        
-       <a class="carousel-control right" id="rightarrow" href="#myCarousel" data-slide="next">›</a>
   </ul> 
   
 </div>  

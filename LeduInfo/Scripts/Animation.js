@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
     //Initialize variable
@@ -35,9 +37,46 @@ $(document).ready(function () {
         //Add to itemReceiver with bouncing effect
         $(this).clone().appendTo(itemReceiver).addClass('show');
 
-    });
-    $('#item-receiver').on('click', function () {
-        window.location = "/House/HouseList/"
+        $("#item-receiver").delegate(".item", "click", function () {
+            var p = $(this).attr('id');
+            alert(p);
+            window.location = "/House/HouseList/" + p;
+        });
+
     });
 
+
+    //    jQuery('#item-receiver img').each(function () {
+    //       
+    //       $(this).live('click', function () {
+    //            var path = $(this).attr('id');
+    //            alert(path);
+    //          window.location = "/House/HouseList/" + path;
+    //        });
+
+    //  });
+
+
+    //    $('#item-receiver').on('click', function () {
+
+    //        //Scroll to bottom if overflowing the page height
+
+    //        var path = $(this).children('item show').attr('id');
+    //        window.location = "/House/HouseList/" + path;
+
+    //        //Add to itemReceiver with bouncing effect
+
+    //    });
+
 });
+
+$(".item show").live("click", function () {
+
+    var path = $(this).children('item show').attr('id');
+    window.location = "/House/HouseList/" + path;
+});
+
+//$(".item show").click(function () {
+//    alert("234");
+
+//})
