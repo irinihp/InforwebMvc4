@@ -39,8 +39,7 @@ $(document).ready(function () {
 
         $("#item-receiver").delegate(".item", "click", function () {
             var p = $(this).attr('id');
-            alert(p);
-            window.location = "/House/HouseList/" + p;
+            window.location = "/House/ShowHouseInfo/" + p;
         });
 
     });

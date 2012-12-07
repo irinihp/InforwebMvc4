@@ -60,6 +60,12 @@ namespace LeduInfo.Controllers
             return File(mp, "img");
         }
 
+        public ActionResult ShowHouseInfo(int id=0)
+        {
+            var houseinfo = db.HouseInfotbl.Find(id);
+            return View(houseinfo);
+        }
+
         
         //
         // GET: /House/Create
