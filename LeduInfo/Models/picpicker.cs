@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Configuration;
 using System.IO;
+using System.Data;
+
 
 
 namespace LeduInfo.Models
@@ -23,6 +25,7 @@ namespace LeduInfo.Models
                    var foo=@item;
                    var filepathInDB = from p in db.ImgPaths
                                   where p.Path==foo
+                                   select p.Path;
                                   select p;
                    
                    if (filepathInDB.Any())
