@@ -41,5 +41,12 @@ namespace LeduInfo.Controllers
             ViewBag.Message = "This is the info page for user to search!";
             return View();
         }
+
+        public ActionResult Vote()
+        {
+            ViewBag.Message = "Vote for your topic!";
+
+            return View();
+        }
     }
 }

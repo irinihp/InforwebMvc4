@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href=" @Url.Content("../../Content/Vote.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="@Url.Content("../../Scripts/Modal.js")"  ></script>
+<div id="vote-info" class="alert alert-info" >
+  <strong>headsup!</strong> your content has been saved!
+</div>
+
+
+<div class="container-narrow">
+<div class="masthead">
+<div class="jumbotron">
+        <h1>I wnat more supermarket !</h1>
+        <p class="lead">there are too little supermaket beside here, we must ask them setup more!</p>
+        <a id="agree" href="#myModal" data-target="#myModal" role="btn btn-primary" class="btn btn-primary" data-toggle="modal">Agree!</a>
+        <a id="disagree"class="btn btn-large btn-success" href="#myModal" data-target="#myModal" data-toggle="modal">Disagree!</a>
+      </div>
+</div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"> Said:</h3>
+  </div>
+  <div class="modal-body">
+    <textarea rows="6"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button id="save-change" class="btn btn-primary">Save</button>
+  </div>
+</div>
+
+<div class="footer">
+    <script type="text/javascript" language="javascript">
+
+        jQuery(document).ready(function ($) {
+            // Stuff to do as soon as the DOM is ready. Use $() w/o colliding with other libs;
+            $('#save-change').click(function () {
+                $('#myModal').modal('hide');
+                $("#vote-info").show("slow");
+            })
+        });
+
+</script>
+</div>
+
+
