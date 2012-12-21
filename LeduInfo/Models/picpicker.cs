@@ -26,7 +26,7 @@ namespace LeduInfo.Models
                    var filepathInDB = from p in db.ImgPaths
                                   where p.Path==foo
                                    select p.Path;
-                                  select p;
+                                 
                    
                    if (filepathInDB.Any())
                    {

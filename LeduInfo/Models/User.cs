@@ -18,4 +18,5 @@ namespace LeduInfo.Models
         public DateTime  Cretaed { get; set; }
         public bool Active { get; set; }
     }
+
 }

@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using LeduInfo.Models;
-
 namespace LeduInfo.Controllers
 {
 
     [Authorize]
+    
     public class AccountController : Controller
     {
 
@@ -141,7 +141,7 @@ namespace LeduInfo.Controllers
                 if (createStatus == MembershipCreateStatus.Success)
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, createPersistentCookie: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home", new {userName=model.UserName});
                 }
                 else
                 {
@@ -161,6 +161,8 @@ namespace LeduInfo.Controllers
             return View();
         }
 
+
+    
         //
         // POST: /Account/ChangePassword
 
@@ -223,6 +225,11 @@ namespace LeduInfo.Controllers
         private IEnumerable<string> GetErrorsFromModelState()
         {
             return ModelState.SelectMany(x => x.Value.Errors.Select(error => error.ErrorMessage));
+        }
+
+        public ActionResult UserInfo()
+        {
+            return View();
         }
 
         public ActionResult TestAction()

@@ -132,6 +132,13 @@ namespace LeduInfo.Controllers
             return View(houseinfo);
         }
 
+        public ActionResult SaveComments(string param1="")
+        {
+            db.VoteComment.Add(new VoteComments { Comments = param1});
+            db.SaveChanges();
+           // var msg = "<div id=\"vote-info\" class=\"alert alert-info\"><strong>headsup!</strong> your content has been saved!</div>";
+            return View();
+        }
         //
         // POST: /House/Delete/5
 

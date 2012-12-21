@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,7 +31,16 @@
         }
         
         <li>@Html.ActionLink("login", "Login", "Account")</li>
+        @if (ViewBag.Message!="Register")
+        {
+        <li>@Html.ActionLink((string)ViewBag.Message, "UserInfo", "Account")</li>
+            
+        }
+        else
+        {
         <li>@Html.ActionLink("Register", "Register", "Account")</li>
+
+        }
     </ul>
   </div>
     </div>

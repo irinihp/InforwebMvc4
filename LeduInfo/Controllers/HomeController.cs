@@ -9,10 +9,9 @@ namespace LeduInfo.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string userName="")
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-            
+            ViewBag.Message = userName;
             return View();
         }
         /// action for About view

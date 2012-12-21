@@ -15,16 +15,15 @@ namespace LeduInfo.Models
         public string Content { get; set; }
     }
 
-   
-    public class BlogContext : DbContext
+
+    public class VoteComments
     {
-        public BlogContext()
-       
-            : base("DefaultConnection")
-        {
-           
-        }
-        public DbSet<bloggingModel> Blogtbl { get; set; }
+        [Key]
+        public int CommentID { get; set; }
+        public string Comments { get; set; }
+        public bool ViewPoint { get; set; }
+        public int UserID { get; set; }
     }
+    
 
 }

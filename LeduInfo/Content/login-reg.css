@@ -8,3 +8,14 @@
     border-left-style: 1;
     width: 40%;
 }
+.validation-summary-errors {
+    color: rgb(232, 12, 77);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.input-block-level input-validation-error
+{
+    color: rgb(232, 12, 77);
+    font-weight: bold;
+    font-size: 1.1em; 
+    }

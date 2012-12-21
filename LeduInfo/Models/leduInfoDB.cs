@@ -20,5 +20,7 @@ namespace LeduInfo.Models
         public DbSet<ImgResource> ImgResources { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<ImgPath> ImgPaths { get; set; }
+        public DbSet<LoginModel> UserLogin { get; set; }
+        public DbSet<VoteComments> VoteComment { get; set; }
     }
 }

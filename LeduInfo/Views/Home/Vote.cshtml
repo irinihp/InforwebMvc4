@@ -24,7 +24,7 @@
     <h3 id="myModalLabel"> Said:</h3>
   </div>
   <div class="modal-body">
-    <textarea rows="6"></textarea>
+    <textarea id="vote-comments" rows="6" cols="" ></textarea>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -37,13 +37,38 @@
 
         jQuery(document).ready(function ($) {
             // Stuff to do as soon as the DOM is ready. Use $() w/o colliding with other libs;
+            
             $('#save-change').click(function () {
                 $('#myModal').modal('hide');
-                $("#vote-info").show("slow");
+
+                var comments = $("#vote-comments").val();
+
+
+                jQuery.ajax({
+                    url: '/House/SaveComments',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: { param1: comments, param2: viewpoint },
+                    complete: function (xhr, textStatus) {
+                        // alert(comments);
+                        //called when complete
+                    },
+
+                    success: function (data) {
+                        $("#vote-info").show("slow");
+                        // alert(data);
+                        //called when successful
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert(xhr + '/' + textStatus + '/' + errorThrown);
+                        //called when there is an error
+                    }
+                });
+
             })
         });
 
-</script>
+    </script>
 </div>
 
 
