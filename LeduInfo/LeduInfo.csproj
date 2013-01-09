@@ -15,6 +15,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
+    <SilverlightApplicationList>{5D4D6864-0229-467B-90A7-E3A50D12AA13}|..\CommunityDesigner\CommunityDesigner.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -190,6 +191,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\SilverlightHelper.cs" />
     <Compile Include="Migrations\201212020556113_AddImgpath.cs" />
     <Compile Include="Migrations\201212020556113_AddImgpath.Designer.cs">
       <DependentUpon>201212020556113_AddImgpath.cs</DependentUpon>
@@ -216,11 +218,15 @@
     <Compile Include="Models\picpicker.cs" />
     <Compile Include="Models\Renter.cs" />
     <Compile Include="Models\Resourceupdate.cs" />
+    <Compile Include="Models\SilverlightObject.cs" />
     <Compile Include="Models\SpeicalShow.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientBin\CommunityDesigner.xap" />
+    <Content Include="CommunityDesignerTestPage.aspx" />
+    <Content Include="CommunityDesignerTestPage.html" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -281,6 +287,7 @@
     <Content Include="Scripts\upshot.js" />
     <Content Include="Scripts\upshot.knockout.extensions.js" />
     <Content Include="Scripts\upshot.min.js" />
+    <Content Include="Scripts\Silverlight.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -371,6 +378,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Vote.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\Profilo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\CommunityDesigner.cshtml" />
+    <Content Include="Views\Shared\Silverlight_Partical.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

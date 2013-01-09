@@ -47,5 +47,18 @@ namespace LeduInfo.Controllers
 
             return View();
         }
+        public ActionResult CommunityDesigner()
+        {
+            SilverlightObject uploadControl = new SilverlightObject
+            {
+                XapName = "CommunityDesigner",
+                Size=new System.Drawing.Size(800,800)
+            };
+            UploadViewModel model = new UploadViewModel()
+            {
+                UploadControl = uploadControl
+            };
+            return View(model);
+        }
     }
 }

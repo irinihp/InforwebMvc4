@@ -13,7 +13,7 @@ namespace LeduInfo.Controllers
     public class AccountController : Controller
     {
 
-        //
+        
         // GET: /Account/Login
 
         [AllowAnonymous]
@@ -158,6 +158,12 @@ namespace LeduInfo.Controllers
 
         public ActionResult ChangePassword()
         {
+            return View();
+        }
+
+        public ActionResult Profilo()
+        {
+            
             return View();
         }
 

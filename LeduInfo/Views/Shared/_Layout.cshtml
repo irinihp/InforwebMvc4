@@ -1,4 +1,6 @@
-
+@{
+    ViewBag.Message = "Register";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +19,7 @@
         <li>@Html.ActionLink("R&D","index","Home")</li>
         <li>@Html.ActionLink("R&D Solution","index","Home")</li>
         <li>@Html.ActionLink("R&D AM","index","Home")</li>
-        <li>@Html.ActionLink("BIS","index","Home")</li>
+        <li>@Html.ActionLink("Community","CommunityDesigner","Home")</li>
         <li>@Html.ActionLink("Vote", "Vote", "Home")</li>
         <li>@Html.ActionLink("HouseResource", "index", "House")</li>
         @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "navbar-form pull-left" }))

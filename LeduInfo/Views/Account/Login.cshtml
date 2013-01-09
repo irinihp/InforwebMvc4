@@ -6,26 +6,26 @@
 <link href="@Url.Content("../../Content/login-reg.css")" rel="stylesheet" type="text/css" />
 <div class="container">
 
-     @using (Html.BeginForm((string)ViewBag.FormAction, "Account", FormMethod.Get, new { @class = "form-signin" }))
+     @using (Html.BeginForm((string)ViewBag.FormAction, "Account", FormMethod.Post, new { @class = "form-signin" }))
      { 
+        @Html.ValidationSummary(true)
         <h2 class="form-signin-heading">Please sign in</h2>
-        
-         <ul class="unstyled">
+        <ul class="unstyled">
          <li>
+         @Html.ValidationMessageFor(m => m.UserName)
          @Html.TextBoxFor(m => m.UserName, new { @class = "input-block-level" ,@placeholder="Email address"})
          </li>
          <li>
+         @Html.ValidationMessageFor(m => m.Password)
          @Html.TextBoxFor(m => m.Password, new { @class = "input-block-level" ,@placeholder="Password",@type="password"})
          
          </li>
          </ul>
          <label class="checkbox"/>
          @Html.LabelFor(m=>m.RememberMe)
-        <button class="btn btn-large btn-primary" type="submit" value="Register">Sign in</button>
+         <input class="btn btn-primary" type="submit" />
      }
-
    
-
     <p>
         @Html.ActionLink("Register", "Register") if you don't have an account.
     </p>
